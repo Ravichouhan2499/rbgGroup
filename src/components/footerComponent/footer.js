@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="footer-section services">
           <h3>Our Services</h3>
           <ul className="footer-links">
-            <li><Link to="/RbgMutualFunds">RBG Mutual Funds Nidhi Limited</Link></li>
+            <li><Link to="/RbgMutualFunds">RBG MICRO FINANCE SERVICES</Link></li>
             <li><a href="#app">App Development</a></li>
             <li><a href="#design">UI/UX Design</a></li>
             <li><a href="#digital">Digital Marketing</a></li>

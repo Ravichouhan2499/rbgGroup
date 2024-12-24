@@ -1,7 +1,8 @@
 import React from "react";
 import "./rbgMutual.css";
-import mutualFund from "../images/mutual-funds.png";
-import gold from "../images/gold.jpg";
+import mutualFund from "../../images/mutual-funds.png";
+import gold from "../../images/gold.jpg";
+import { Link } from "react-router-dom";
 
 const RbgMutualFunds = () => {
   return (
@@ -24,25 +25,21 @@ const RbgMutualFunds = () => {
               alt="RBG Mutual Funds Logo"
               className="foundation-logo"
             />
-            <h2 className="foundation-title">RBG Mutual Funds NIDHI LIMITED</h2>
+            <h2 className="foundation-title">RBG MICRO FINANCE SERVICES</h2>
           </div>
 
           <p className="foundation-text">
-            RBG Mutual Benefits Nidhi Limited is a Nidhi company registered with
-            the Government of India, Ministry of Corporate Affairs, with its
-            registered and corporate office in B-5 Akruti Trade Center, Andheri
-            East. At RBG Mutual Benefits Nidhi Limited, we stimulate the mutual
-            growth of our members through trust and responsibility.
+          Rbg Financial Services Private Limited is a Private company incorporated on 05 September 2008. It is classified as Non-government company and is registered at Registrar of Companies, Ernakulam. Its authorized share capital is Rs. 35,100,000 and its paid up capital is Rs. 34,000,000. It's NIC code is 671 (which is part of its CIN). As per the NIC code, it is inolved in Activities auxiliary to financial intermediation, except insurance and pension funding.[This Group includes activities involved in or closely related to financial inter-mediation other than insurance and pension funding but not themselves involving financial inter-mediation]..
           </p>
 
-          <a
-            href="https://www.birlagroup.com/"
+          <Link
+            to="https://www.birlagroup.com/"
             className="website-btn"
             target="_blank"
             rel="noopener noreferrer"
           >
             View Website
-          </a>
+          </Link>
         </div>
       </div>
     </section>

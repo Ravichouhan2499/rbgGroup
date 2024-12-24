@@ -1,0 +1,63 @@
+.nita-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .nita-content {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .nita-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .nita-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .website-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007b7f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .website-btn:hover {
+    background-color: #005f5f;
+  }
+  
+  .nita-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .nita-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .nita-image-engineer {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    align-self: center;
+  }
+  
