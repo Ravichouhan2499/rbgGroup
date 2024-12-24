@@ -1,0 +1,157 @@
+/* Hero Section Container */
+.hero-section {
+    position: relative;
+    padding: 150px 0;
+    background-color: #ffffff;
+    min-height: 100vh;
+  }
+  
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  /* Left Content Styling */
+  .hero-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .read-more-btn {
+    background-color: #0b5e6b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #094854;
+  }
+  
+  /* Right Image Grid */
+  .image-grid {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .top-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .top-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .bottom-images {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .profile-image,
+  .side-image {
+    flex: 1;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .profile-image img,
+  .side-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Scroll to Top Button */
+  .scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0066cc;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-top-btn:hover {
+    background-color: #0052a3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-grid {
+      flex-direction: column;
+    }
+  
+    .bottom-images {
+      flex-direction: column;
+    }
+  
+    .profile-image,
+    .side-image {
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .top-image {
+      height: 200px;
+    }
+  
+    .profile-image,
+    .side-image {
+      height: 150px;
+    }
+  }
+  
