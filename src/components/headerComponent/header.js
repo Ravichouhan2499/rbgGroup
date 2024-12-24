@@ -3,7 +3,6 @@ import { Menu, X } from 'lucide-react';
 import img from '../images/img copy.png';
 import './header.css';
 
-
 const Header = () => {
   const [activeLink, setActiveLink] = useState('#home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
