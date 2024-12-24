@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import img from '../images/img copy.png';
 import './header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState('#home');
@@ -32,41 +33,41 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
-          <a
-            href="/"
+          <Link
+            to="/"
             className={activeLink === '/' ? 'active' : ''}
             onClick={() => handleLinkClick('/')}
           >
             Home
-          </a>
-          <a
-            href="/about"
+          </Link>
+          <Link
+            to="/about"
             className={activeLink === '/about' ? 'active' : ''}
             onClick={() => handleLinkClick('/about')}
           >
-            About Us
-          </a>
-          <a
-            href="/rbgMutualFunds"
+            About
+          </Link>
+          <Link
+            to="/rbgMutualFunds"
             className={activeLink === '#services' ? 'active' : ''}
             onClick={() => handleLinkClick('#services')}
           >
             Services
-          </a>
-          <a
-            href="#product"
+          </Link>
+          <Link
+            to="/product"
             className={activeLink === '#product' ? 'active' : ''}
             onClick={() => handleLinkClick('#product')}
           >
             Product
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className={`contact-button ${activeLink === '#contact' ? 'active' : ''}`}
             onClick={() => handleLinkClick('#contact')}
           >
             Contact
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
