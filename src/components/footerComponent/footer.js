@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="contact-info">
             <p><i className="icon">📍</i> Office no. 122, First Floor, Annex Hotel Ackruti Trade Center, Road No. 7, MIDC, Andheri, Mumbai, MH 400093</p>
             <p><i className="icon">📞</i> +91 70155 86117</p>
-            <p><i className="icon">✉️</i> Help@vakilkaro.co.in</p>
+            <p><i className="icon">✉️</i>rinkubirla0786@gmail.com</p>
           </div>
         </div>
 

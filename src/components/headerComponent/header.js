@@ -1,25 +1,38 @@
 import React, { useState } from 'react';
-import './header.css';
+import { Menu, X } from 'lucide-react';
 import img from '../images/img copy.png';
+import './header.css';
+
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState('#home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLinkClick = (hash) => {
     setActiveLink(hash);
+    setIsMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <header className="navbar">
       <div className="container">
         {/* Logo Section */}
-        <div className="logo">
-          <img src={img} alt="Logo" />
-          <span>RBG</span>
+        <div className="logo-container">
+          <div className="logo">
+            <img src={img} alt="Logo" />
+            <span>RBG</span>
+          </div>
+          <button className="menu-toggle" onClick={toggleMenu}>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
         {/* Navigation Links */}
-        <nav className="nav-links">
+        <nav className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
           <a
             href="/"
             className={activeLink === '/' ? 'active' : ''}
@@ -35,7 +48,7 @@ const Header = () => {
             About Us
           </a>
           <a
-            href="#services"
+            href="/rbgMutualFunds"
             className={activeLink === '#services' ? 'active' : ''}
             onClick={() => handleLinkClick('#services')}
           >

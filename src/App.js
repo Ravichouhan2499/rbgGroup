@@ -17,6 +17,8 @@ export default function App() {
   <Route path="/rbgMutualFunds" element={<RbgMutualFunds />} />
   <Route path="/about" element={<About />} />
   <Route path="/" element={<HomePage />} />
+  
+
 
 </Routes>
 
