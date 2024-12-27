@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 200px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #2e2a1ed9;
   }
   
   .nita-content {
@@ -15,12 +15,12 @@
   .nita-title {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #000;
+    color: #f5f3f3;
   }
   
   .nita-description {
     font-size: 1rem;
-    color: #333;
+    color: #eceaea;
     line-height: 1.6;
   }
   

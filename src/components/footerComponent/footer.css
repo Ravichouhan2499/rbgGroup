@@ -1,138 +1,115 @@
-/* Footer Container */
+/* Footer Base Styles */
 .footer {
-    background-color: #0b5e6b;
-    color: #fff;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-  }
-  
+  background: #2c3e50;
+  color: white;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 280px;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ecf0f1;
+}
+
+.footer-description {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #ecf0f1;
+}
+
+.contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #ecf0f1;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3498db;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #34495e;
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
+
+.footer-bottom-links a {
+  margin: 0 10px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 250px;
-  }
-  
-  .footer-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #f9a826;
-  }
-  
-  .footer-section p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #e0e0e0;
-  }
-  
-  .contact-info p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    color: #ccc;
-  }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.95rem;
-    transition: color 0.3s;
-  }
-  
-  .footer-links a:hover {
-    color: #f9a826;
-  }
-  
-  /* Social Links Section */
-  .social-links {
-    text-align: left;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .social-icon {
-    font-size: 1.5rem;
-    color: #f9a826;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    color: #fff;
-    transform: scale(1.1);
-  }
-  
-  /* Footer Bottom Section */
-  .footer-bottom {
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px solid #e0e0e0;
+    flex-direction: column;
     text-align: center;
   }
-  
-  .footer-bottom p {
-    margin: 5px 0;
-    font-size: 0.9rem;
-    color: #ccc;
+
+  .footer-section {
+    min-width: 100%;
   }
-  
-  .footer-bottom-links {
-    margin-top: 5px;
-  }
-  
-  .footer-bottom-links a {
-    text-decoration: none;
-    color: #f9a826;
-    margin: 0 10px;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-bottom-links a:hover {
-    color: #fff;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .footer-section {
-      margin-bottom: 20px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .footer-section h3 {
-      font-size: 1.2rem;
-    }
-  
-    .contact-info p {
-      font-size: 0.85rem;
-    }
-  }
-  
+}

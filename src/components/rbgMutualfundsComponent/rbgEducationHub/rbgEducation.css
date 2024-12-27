@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Hero Section Styling */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #1a1a1a, #2c3e50);
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 150px;
+}
+
+/* Bubbles Animation */
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  animation: float 15s linear infinite;
+  bottom: -100px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Hero Container */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Content Styling */
+.hero-content {
+  flex: 1;
+  color: white;
+}
+
+.glowing-text {
+  font-size: 24px;
+  color: #e9eaeb;
+  text-shadow: 0 0 10px ;
+  margin-bottom: 10px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  /* from {
+    text-shadow: 0 0 10px #3498db, 0 0 20px #3498db;
+  }
+  to {
+    text-shadow: 0 0 20px #3498db, 0 0 30px #3498db;
+  } */
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #eee;
+}
+
+/* Button Styling */
+.animated-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+}
+
+.animated-button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Image Styling */
+.image-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hover-effect {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-10px);
+}
+
+.hover-effect img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hover-effect:hover img {
+  transform: scale(1.1);
+}

@@ -22,9 +22,10 @@ const Header = () => {
       <div className="container">
         {/* Logo Section */}
         <div className="logo-container">
-          <div className="logo">
-            <img src={img} alt="Logo" />
+          <div className="logo" onClick={toggleMenu}>
+          <Link to='/' > <img src={img} alt="Logo" /></Link>
             <span>RBG</span>
+      
           </div>
           <button className="menu-toggle" onClick={toggleMenu}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -48,7 +49,7 @@ const Header = () => {
             About
           </Link>
           <Link
-            to="/rbgMutualFunds"
+            to="/service"
             className={activeLink === '#services' ? 'active' : ''}
             onClick={() => handleLinkClick('#services')}
           >

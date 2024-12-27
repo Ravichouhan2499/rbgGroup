@@ -7,12 +7,12 @@ const RbgMultiPurpose = () => {
     <div className="nita-container">
       <div className="nita-images">
         <img
-          src="https://via.placeholder.com/600x400" // Replace with the left image URL
+          src='' // Replace with the left image URL
           alt="Elevators"
           className="nita-image"
         />
         <img
-          src="https://via.placeholder.com/200x300" // Replace with the engineer's image URL
+          src='' // Replace with the engineer's image URL
           alt="Engineer"
           className="nita-image-engineer"
         />
